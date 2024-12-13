@@ -27,6 +27,14 @@
         <button id="start-button" class="button-success">Старт</button>
     </div>
     <div class="board" id="board"></div>
+    <div id="screenResolution"></div>
     <script src="./script.js"></script>
+    <script>
+    window.onload = function() {
+        var width = window.screen.width; // Ширина экрана
+        var height = window.screen.height; // Высота экрана
+        document.getElementById("screenResolution").innerText = "Разрешение экрана: " + width + " x " + height;
+    }
+    </script>
 </body>
 </html>
