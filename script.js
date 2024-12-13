@@ -21,16 +21,6 @@ function startGame() {
     const width = parseInt(document.getElementById('get-width').value);
     const height = parseInt(document.getElementById('get-height').value);
 
-    if (isOutOfRange(width, 4, 11)) {
-        alert('Ширина должна быть от 4 до 11')
-        return
-    }
-
-    if (isOutOfRange(height, 3, 6)) {
-        alert('Высота должна быть от 3 до 6')
-        return
-    }
-
     reset()
     setupBoard(width, height)
 }
