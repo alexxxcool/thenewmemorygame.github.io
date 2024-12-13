@@ -10,31 +10,27 @@
     <div class="controls">
         <label for="get-width">Ширина:</label>
         <select id="get-width">
-            <option>4</option>
-            <option>6</option>
-            <option>8</option>
-            <option>10</option>
+            <option value="3">3</option>
+            <option value="4" selected>4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="8">8</option>
+            <option value="10">10</option>
         </select>
 
         <label for="get-height">Высота:</label>
         <select id="get-height">
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
+            <option value="3">3</option>
+            <option value="4" selected>4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="8">8</option>
+            <option value="10">10</option>
         </select>
 
         <button id="start-button" class="button-success">Старт</button>
     </div>
     <div class="board" id="board"></div>
-    <div id="screenResolution"></div>
     <script src="./script.js"></script>
-    <script>
-    window.onload = function() {
-        var width = window.screen.width; // Ширина экрана
-        var height = window.screen.height; // Высота экрана
-        document.getElementById("screenResolution").innerText = "Разрешение экрана: " + width + " x " + height;
-    }
-    </script>
 </body>
 </html>
