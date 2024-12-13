@@ -93,6 +93,16 @@ input, select {
     border-radius: var(--border-radius-value);
 }
 
+#get-width option[value="3"],
+#get-width option[value="5"] {
+    display: none;
+}
+
+#get-height option[value="8"],
+#get-height option[value="10"] {
+    display: none;
+}
+
 @media (hover: hover) {
     .button-success:hover {
         background-color: #3b8c3f;
@@ -124,6 +134,18 @@ input, select {
 
 @media (max-width: 800px) {
     .card {
+        width: 60px; 
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .board {
+        gap: 6px;
+    }
+}
+
+@media (max-width: 700px) {
+    .card {
         width: 50px; 
         height: 50px;
         font-size: 24px;
@@ -136,11 +158,34 @@ input, select {
 
 
 @media (max-width: 600px) {
+    #get-width option[value="10"],
+    #get-width option[value="8"] {
+        display: none;
+    }
+
+    #get-width option[value="3"],
+    #get-width option[value="5"] {
+        display: block;
+    }
+
+    #get-height option[value="8"],
+    #get-height option[value="10"] {
+        display: block;
+    }
+
+    #get-height option[value="3"],
+    #get-height option[value="5"] {
+        display: none;
+    }
+
+    body {
+        padding: 30px 0;
+    }
+
     .card {
-        width: 35px;
-        height: 35px;
-        font-size: 20px;
-        border-radius: 5px;
+        width: 55px;
+        height: 55px;
+        font-size: 25px;
     }
 
     .board {
@@ -150,6 +195,7 @@ input, select {
     .controls {
         width: 90vw;
         font-size: 13px;
+        margin-bottom: 30px;
     }
 
     label {
@@ -171,36 +217,73 @@ input, select {
 
 @media (max-width: 400px) {
     .card {
-        width: 25px; 
-        height: 25px;
-        font-size: 16px;
+        width: 50px; 
+        height: 50px;
+        font-size: 21px;
     }
 
-    .board {
-        gap: 5px;
+    body {
+        padding: 20px 0;
+    }
+
+    .controls {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 355px) {
+    .card {
+        width: 45px; 
+        height: 45px;
+        font-size: 18px;
     }
 }
 
 @media (max-width: 435px) {
     .controls {
         width: 90vw; 
-        font-size: 10px;
+        font-size: 14px;
         padding: 10px;
     }
 
     label {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     select {
         width: 55px;
-        margin-right: 15px;
-        font-size: 10px;
+        margin-right: 8px;
+        font-size: 14px;
     }
 
     .button-success {
-        width: 55px;
-        height: 25px;
-        font-size: 10px;
+        width: 70px;
+        height: 35px;
+        font-size: 14px;
     }
 }
+
+@media (max-width: 360px) {
+    .controls {
+        width: 90vw; 
+        font-size: 11px;
+        padding: 10px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    select {
+        width: 55px;
+        margin-right: 8px;
+        font-size: 12px;
+    }
+
+    .button-success {
+        width: 60px;
+        height: 35px;
+        font-size: 12px;
+    }
+}
+
